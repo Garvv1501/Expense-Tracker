@@ -4,6 +4,12 @@ A modern and responsive expense tracking web application built using HTML, CSS, 
 
 ExpenseTracker Pro helps users track their income and expenses, monitor their balance, and manage transactions through a clean dashboard interface. All transaction data is stored locally in the browser, ensuring that information remains available even after refreshing the page.
 
+## 🌐 Live Demo
+
+Experience the project live:
+
+**🔗 Live Demo:** 
+
 ## ✨ Features
 
 * Add income transactions
@@ -15,7 +21,7 @@ ExpenseTracker Pro helps users track their income and expenses, monitor their ba
 * Persistent data using Local Storage
 * Responsive design for desktop and mobile devices
 * Glassmorphism-inspired dashboard UI
-* Animated floating finance-themed background
+* Animated finance-themed background
 
 ## 🛠️ Technologies Used
 
@@ -36,19 +42,19 @@ The application provides:
 
 ## 🚀 Getting Started
 
-1. Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/your-username/ExpenseTracker-Pro.git
 ```
 
-2. Open the project folder
+### Open the project folder
 
 ```bash
 cd ExpenseTracker-Pro
 ```
 
-3. Run the application
+### Run the application
 
 Simply open `index.html` in your browser.
 
@@ -74,6 +80,12 @@ ExpenseTracker-Pro/
 
 ## 👨‍💻 Author
 
-Garv Chugh
+**Garv Chugh**
 
 Built as a frontend project to practice JavaScript, DOM manipulation, Local Storage, and responsive UI development.
+
+## ⭐ Support
+
+If you found this project useful or enjoyed exploring it, consider giving it a ⭐ on GitHub. It helps support the project and motivates future improvements.
+
+Thank you for checking out ExpenseTracker Pro!
