@@ -8,7 +8,7 @@ ExpenseTracker Pro helps users track their income and expenses, monitor their ba
 
 Experience the project live:
 
-**🔗 Live Demo:** 
+**🔗 Live Demo:** https://garvv1501.github.io/Expense-Tracker/
 
 ## ✨ Features
 
