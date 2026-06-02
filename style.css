@@ -1,0 +1,522 @@
+/* RESET */
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #111827,
+            #1e293b
+        );
+
+    min-height: 100vh;
+
+    color: white;
+
+    padding: 30px;
+}
+
+/* CONTAINER */
+
+.container {
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+/* HEADER */
+
+.header {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.header h1 {
+
+    font-size: 2.8rem;
+
+    margin-bottom: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #3b82f6,
+            #60a5fa
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.header p {
+
+    color: #94a3b8;
+}
+
+/* OVERVIEW */
+
+.overview {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(250px, 1fr)
+        );
+
+    gap: 20px;
+
+    margin-bottom: 35px;
+}
+
+/* CARDS */
+
+.card {
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(15px);
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    transition: 0.3s ease;
+}
+
+.card:hover {
+
+    transform: translateY(-5px);
+}
+
+.card h3 {
+
+    color: #94a3b8;
+
+    margin-bottom: 12px;
+
+    font-weight: 500;
+}
+
+.card h2 {
+
+    font-size: 2rem;
+}
+
+/* CARD COLORS */
+
+.balance-card {
+
+    border-left:
+        5px solid #3b82f6;
+}
+
+.income-card {
+
+    border-left:
+        5px solid #22c55e;
+}
+
+.expense-card {
+
+    border-left:
+        5px solid #ef4444;
+}
+
+/* FORM SECTION */
+
+.form-section {
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    margin-bottom: 35px;
+}
+
+.form-section h2 {
+
+    margin-bottom: 20px;
+}
+
+/* FORM */
+
+#transactionForm {
+
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 15px;
+}
+
+#transactionForm input,
+#transactionForm select {
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        rgba(255,255,255,0.08);
+
+    color: white;
+
+    outline: none;
+}
+
+#transactionForm input::placeholder {
+
+    color: #94a3b8;
+}
+
+#transactionForm select option {
+
+    background: #1e293b;
+}
+
+#transactionForm button {
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        );
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+#transactionForm button:hover {
+
+    transform: scale(1.03);
+}
+
+/* HISTORY */
+
+.history {
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    padding: 25px;
+}
+
+.history h2 {
+
+    margin-bottom: 20px;
+}
+
+/* TRANSACTION LIST */
+
+#transactionList {
+
+    list-style: none;
+}
+
+/* ITEM */
+
+.transaction {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border-radius: 12px;
+}
+
+/* LEFT */
+
+.transaction-info {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.transaction-name {
+
+    font-weight: 500;
+}
+
+.transaction-type {
+
+    font-size: 0.85rem;
+
+    color: #94a3b8;
+}
+
+/* AMOUNT */
+
+.amount {
+
+    font-weight: 600;
+}
+
+.income {
+
+    color: #22c55e;
+}
+
+.expense {
+
+    color: #ef4444;
+}
+
+/* DELETE BUTTON */
+
+.delete-btn {
+
+    background: #ef4444;
+
+    border: none;
+
+    color: white;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    margin-left: 12px;
+
+    transition: 0.3s ease;
+}
+
+.delete-btn:hover {
+
+    opacity: 0.85;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    #transactionForm {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 15px;
+    }
+
+    .header h1 {
+
+        font-size: 2.2rem;
+    }
+
+    .transaction {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+}
+/* ========================= */
+/* MONEY BACKGROUND */
+/* ========================= */
+
+.money-background {
+
+    position: fixed;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+/* MONEY SYMBOLS */
+
+.money-background span {
+
+    position: absolute;
+
+    color: rgba(59, 130, 246, 0.12);
+
+    font-size: 3rem;
+
+    font-weight: 700;
+
+    animation: floatMoney linear infinite;
+}
+
+/* RANDOM POSITIONS */
+
+.money-background span:nth-child(1) {
+
+    left: 5%;
+    animation-duration: 18s;
+}
+
+.money-background span:nth-child(2) {
+
+    left: 15%;
+    animation-duration: 22s;
+}
+
+.money-background span:nth-child(3) {
+
+    left: 25%;
+    animation-duration: 16s;
+}
+
+.money-background span:nth-child(4) {
+
+    left: 35%;
+    animation-duration: 20s;
+}
+
+.money-background span:nth-child(5) {
+
+    left: 45%;
+    animation-duration: 17s;
+}
+
+.money-background span:nth-child(6) {
+
+    left: 55%;
+    animation-duration: 24s;
+}
+
+.money-background span:nth-child(7) {
+
+    left: 65%;
+    animation-duration: 19s;
+}
+
+.money-background span:nth-child(8) {
+
+    left: 75%;
+    animation-duration: 21s;
+}
+
+.money-background span:nth-child(9) {
+
+    left: 85%;
+    animation-duration: 18s;
+}
+
+.money-background span:nth-child(10) {
+
+    left: 92%;
+    animation-duration: 23s;
+}
+
+.money-background span:nth-child(11) {
+
+    left: 12%;
+    animation-duration: 20s;
+}
+
+.money-background span:nth-child(12) {
+
+    left: 70%;
+    animation-duration: 17s;
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes floatMoney {
+
+    from {
+
+        transform:
+            translateY(110vh)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    20% {
+
+        opacity: 1;
+    }
+
+    80% {
+
+        opacity: 1;
+    }
+
+    to {
+
+        transform:
+            translateY(-20vh)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+}
