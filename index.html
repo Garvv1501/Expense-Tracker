@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ExpenseTracker Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- MONEY BACKGROUND -->
+
+    <div class="money-background">
+
+        <span>₹</span>
+        <span>$</span>
+        <span>€</span>
+        <span>£</span>
+        <span>₹</span>
+        <span>$</span>
+        <span>€</span>
+        <span>£</span>
+        <span>₹</span>
+        <span>$</span>
+        <span>€</span>
+        <span>£</span>
+
+    </div>
+
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <div class="header">
+
+            <h1>ExpenseTracker Pro 💰</h1>
+
+            <p>Track your finances smarter.</p>
+
+        </div>
+
+        <!-- OVERVIEW -->
+
+        <div class="overview">
+
+            <div class="card balance-card">
+
+                <h3>Total Balance</h3>
+
+                <h2 id="balance">₹0</h2>
+
+            </div>
+
+            <div class="card income-card">
+
+                <h3>Income</h3>
+
+                <h2 id="income">₹0</h2>
+
+            </div>
+
+            <div class="card expense-card">
+
+                <h3>Expense</h3>
+
+                <h2 id="expense">₹0</h2>
+
+            </div>
+
+        </div>
+
+        <!-- ADD TRANSACTION -->
+
+        <div class="form-section">
+
+            <h2>Add Transaction</h2>
+
+            <form id="transactionForm">
+
+                <input
+                    type="text"
+                    id="text"
+                    placeholder="Transaction Name"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Amount"
+                    required
+                >
+
+                <select id="type">
+
+                    <option value="income">Income</option>
+
+                    <option value="expense">Expense</option>
+
+                </select>
+
+                <button type="submit">
+
+                    Add Transaction
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- HISTORY -->
+
+        <div class="history">
+
+            <h2>Transaction History</h2>
+
+            <ul id="transactionList"></ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
